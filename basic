@@ -1,0 +1,25 @@
+"""
+Topic: Central Tendency – Mean, Median, Mode
+
+Self-Practice Notes
+
+I took a small dataset of student marks and tried to calculate mean, median, and mode manually and using Python to reinforce the concept.
+"""
+
+import numpy as np
+from scipy import stats
+
+# Sample data: Marks of 10 students in a test
+marks = [45, 50, 55, 60, 65, 55, 70, 75, 55, 80]
+
+# Mean
+mean_marks = np.mean(marks)
+print(f"Mean: {mean_marks}")
+
+# Median
+median_marks = np.median(marks)
+print(f"Median: {median_marks}")
+
+# Mode
+mode_marks = stats.mode(marks, keepdims=False)
+print(f"Mode: {mode_marks.mode}, Count: {mode_marks.count}")
