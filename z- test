@@ -1,0 +1,30 @@
+"""
+Topic: Z-Test for Population Mean
+
+In this problem, I checked if the sample mean significantly differs from the known population mean.
+"""
+
+import numpy as np
+from scipy.stats import norm
+
+# Sample details
+sample_mean = 78
+population_mean = 75
+std_dev = 10
+n = 36  # sample size
+
+# Standard Error
+se = std_dev / np.sqrt(n)
+
+# Z-value
+z = (sample_mean - population_mean) / se
+p_value = 1 - norm.cdf(z)
+
+print(f"Z-value: {z:.2f}")
+print(f"P-value: {p_value:.4f}")
+
+# Interpretation
+if p_value < 0.05:
+    print("Reject Null Hypothesis – Significant difference.")
+else:
+    print("Fail to Reject Null – No significant difference.")
