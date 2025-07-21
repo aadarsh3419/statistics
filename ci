@@ -1,0 +1,28 @@
+"""
+Topic: 95% Confidence Interval for a Sample Mean
+
+Calculated CI to estimate where the true population mean may lie based on sample.
+"""
+
+import numpy as np
+from scipy.stats import t
+
+# Sample data
+sample = [70, 72, 68, 74, 69, 71, 73, 75, 72, 70]
+n = len(sample)
+mean = np.mean(sample)
+s = np.std(sample, ddof=1)
+
+# 95% confidence interval
+confidence = 0.95
+alpha = 1 - confidence
+df = n - 1
+t_crit = t.ppf(1 - alpha/2, df)
+se = s / np.sqrt(n)
+margin = t_crit * se
+
+ci_lower = mean - margin
+ci_upper = mean + margin
+
+print(f"Sample Mean: {mean:.2f}")
+print(f"95% Confidence Interval: ({ci_lower:.2f}, {ci_upper:.2f})")
