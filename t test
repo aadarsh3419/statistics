@@ -1,0 +1,24 @@
+# T-Test 
+
+
+import numpy as np
+
+# Given Data
+sample = [19.2, 21.1, 20.3, 18.7, 20.1, 19.9, 20.5, 19.5, 20.4]
+n = 9
+population_mean = 20
+t_value = 1.96
+df = n - 1
+
+# Step 1: Mean and SD
+m = np.mean(sample)
+s = np.std(sample, ddof=1)
+
+# Step 2: T-Test Calculation
+se = s / np.sqrt(n)
+t_stat = (m - population_mean) / se
+
+print(f"Sample Mean: {m:.2f}")
+print(f"Standard Deviation: {s:.2f}")
+print(f"T-Statistic: {t_stat:.3f}")
+print(f"Degrees of Freedom: {df}")
