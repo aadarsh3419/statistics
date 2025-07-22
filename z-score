@@ -1,0 +1,4 @@
+**Topic:** Z-Score  
+**Question:** Find the Z-score for x = 85, when mean μ = 70 and standard deviation σ = 10  
+**Answer:**  
+Z = (x - μ) / σ = (85 - 70) / 10 = 1.5
