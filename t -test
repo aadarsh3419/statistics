@@ -1,0 +1,9 @@
+**Topic:** T-Test  
+**Question:** A sample of 20 students has an average score of 75. The population mean is 80, and standard deviation is 10. Is there a significant difference?  
+**Answer:**  
+n = 20  
+x̄ = 75, μ = 80, s = 10  
+t = (x̄ - μ) / (s / √n) = (75 - 80) / (10 / √20) = -2.24  
+Compare with t-critical value (α = 0.05): ±2.093  
+Since -2.24 < -2.093 → Reject null hypothesis  
+There is significant difference.
