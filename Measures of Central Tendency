@@ -1,0 +1,5 @@
+Question:  Find the mean, median, and mode of the dataset [4, 5, 6, 7, 5, 6, 6, 8, 9]  
+Answer:
+Mean = (4 + 5 + 6 + 7 + 5 + 6 + 6 + 8 + 9) / 9 = 56 / 9 = 6.22  
+Median = 6  
+Mode = 6 (since it appears most frequently)
