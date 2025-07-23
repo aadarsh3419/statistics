@@ -1,0 +1,8 @@
+from scipy.stats import ttest_1samp
+
+sample = [22, 24, 20, 23, 21, 19]
+population_mean = 20
+
+t_stat, p_value = ttest_1samp(sample, population_mean)
+print("T-statistic:", t_stat)
+print("P-value:", p_value)
