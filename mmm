@@ -1,0 +1,12 @@
+import numpy as np
+from scipy import stats
+
+data = [12, 15, 17, 15, 19, 21, 15]
+
+mean = np.mean(data)
+median = np.median(data)
+mode = stats.mode(data)
+
+print("Mean:", mean)
+print("Median:", median)
+print("Mode:", mode.mode[0])
