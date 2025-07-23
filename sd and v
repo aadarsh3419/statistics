@@ -1,0 +1,7 @@
+data = [10, 20, 30, 40, 50]
+
+std_dev = np.std(data)
+variance = np.var(data)
+
+print("Standard Deviation:", std_dev)
+print("Variance:", variance)
