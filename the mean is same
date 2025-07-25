@@ -1,0 +1,15 @@
+import numpy as np  
+import matplotlib.pyplot as plt  
+
+# Generate population data  
+population = np.random.normal(loc=50, scale=15, size=10000)  
+
+# Draw multiple sample means  
+sample_means = [np.mean(np.random.choice(population, 50)) for _ in range(1000)]  
+
+# Plot sample means  
+plt.hist(sample_means, bins=30, color='skyblue', edgecolor='black')  
+plt.title("Central Limit Theorem in Action")  
+plt.xlabel("Sample Mean")  
+plt.ylabel("Frequency")  
+plt.show()
