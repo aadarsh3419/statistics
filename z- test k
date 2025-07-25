@@ -1,0 +1,27 @@
+ Z-test to compare sample mean and population mean (known std)
+import numpy as np
+from scipy import stats
+
+
+sample_mean = 49.2
+population_mean = 50
+std_dev = 1.5
+sample_size = 40
+
+ Calculate Standard Error (SE)
+se = std_dev / np.sqrt(sample_size)
+
+ Calculate Z-score
+z_score = (sample_mean - population_mean) / se
+
+ Calculate p-value
+p_value = stats.norm.sf(abs(z_score)) * 2  # two-tailed
+
+print("Z-Score:", z_score)
+print("P-Value:", p_value)
+
+ Conclusion
+if p_value < 0.05:
+    print("→ Reject null hypothesis: Output mean is significantly different.")
+else:
+    print("→ Fail to reject null: No significant difference.")
