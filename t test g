@@ -1,0 +1,31 @@
+# Q1. T-test to compare sample mean and population mean
+import numpy as np
+from scipy import stats
+
+# Sample details
+sample_mean = 15.4
+population_mean = 16
+sample_std_dev = 2.1
+sample_size = 20
+
+# Step 1: Calculate Standard Error (SE)
+se = sample_std_dev / np.sqrt(sample_size)
+
+# Step 2: Calculate t-statistic
+t_stat = (sample_mean - population_mean) / se
+
+# Step 3: Degrees of freedom
+df = sample_size - 1
+
+# Step 4: Calculate p-value
+p_value = stats.t.sf(np.abs(t_stat), df) * 2  # two-tailed test
+
+print("T-Statistic:", t_stat)
+print("Degrees of Freedom:", df)
+print("P-Value:", p_value)
+
+# 📌 Conclusion
+if p_value < 0.05:
+    print("→ Reject null hypothesis: Sample mean is significantly different from population mean.")
+else:
+    print("→ Fail to reject null: No significant difference found.")
