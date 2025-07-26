@@ -1,0 +1,9 @@
+# Answer:
+# A high p-value (> 0.05) means we fail to reject the null hypothesis.
+# It means there is not enough evidence to prove something changed.
+# Example:
+p_value = 0.72
+if p_value > 0.05:
+    print("Fail to reject the null hypothesis.")
+else:
+    print("Reject the null hypothesis.")
