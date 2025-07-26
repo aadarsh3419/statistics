@@ -1,0 +1,10 @@
+# Answer:
+# Standard Deviation tells us how spread out the data is from the mean.
+# Variance is just the square of Standard Deviation.
+# For example:
+import numpy as np
+data = [10, 12, 14, 16, 18]
+std = np.std(data)
+var = np.var(data)
+print("Standard Deviation:", std)
+print("Variance:", var)
