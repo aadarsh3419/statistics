@@ -1,0 +1,10 @@
+# Answer:
+# Use Z-test when population SD is known or n > 30.
+# Use T-test when population SD is unknown and n < 30.
+# Example:
+# One-sample t-test (manually checking if sample mean ≠ known mean)
+import scipy.stats as stats
+sample = [15, 17, 14, 16, 18]
+t_stat, p_value = stats.ttest_1samp(sample, 16)
+print("T-Statistic:", t_stat)
+print("P-value:", p_value)
