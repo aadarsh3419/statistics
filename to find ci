@@ -1,0 +1,15 @@
+import numpy as np
+
+n = 36
+mu = 52
+sd = 8
+z_alpha_2 = 1.96
+
+se = sd / np.sqrt(n)
+moe = z_alpha_2 * se
+
+ci_lower = mu - moe
+ci_upper = mu + moe
+
+print("Confidence Interval is: (", round(ci_lower, 2), ",", round(ci_upper, 2), ")")
+print("Margin of Error is:", round(moe, 2))
