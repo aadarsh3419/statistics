@@ -1,6 +1,6 @@
 # 📚 Aadarsh’s Statistics for Data Science
 
-![Banner](assets/statistics-banner.png)
+![Project Pipeline](https://www.google.com/imgres?q=statistics%20animation%20images%20moving&imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fthumbnails%2F026%2F602%2F755%2Flarge%2Fbusiness-analysis-and-statistics-moving-male-entrepreneur-studies-digital-graphs-and-company-charts-or-financial-report-character-develops-strategy-for-success-isometric-graphic-animated-cartoon-video.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-videos%2Fanimated-statistics&docid=xyf_LI9rits8uM&tbnid=oxrykN4f50tp3M&vet=12ahUKEwi58Onmhu-OAxVHTGwGHeOmHDoQM3oECBoQAA..i&w=800&h=450&hcb=2&ved=2ahUKEwi58Onmhu-OAxVHTGwGHeOmHDoQM3oECBoQAA))
 
 Welcome to my **Statistics Repository**, where I’m mastering all the essential concepts from beginner to advanced — with real-life examples, Python code, formulas, and applications in **Data Science** and **Machine Learning**.
 
