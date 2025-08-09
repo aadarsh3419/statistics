@@ -1,0 +1,8 @@
+from scipy.stats import binom
+
+n = 15
+p = 0.3
+k = 5
+
+probability = binom.pmf(k, n, p)
+print(f"P(X = {k} successes in {n} trials):", probability)
