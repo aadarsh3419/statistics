@@ -1,0 +1,9 @@
+import scipy.stats as stats
+
+mean = 50
+std_dev = 10
+x = 60
+
+z_score = (x - mean) / std_dev
+P_less_than_x = stats.norm.cdf(z_score)
+print(f"P(X ≤ {x}):", P_less_than_x)
