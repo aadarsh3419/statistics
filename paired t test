@@ -1,0 +1,16 @@
+from scipy.stats import ttest_rel
+
+# Before and After scores of same students
+before = [70, 75, 80, 85, 90]
+after = [72, 78, 82, 88, 92]
+
+# Perform paired t-test
+t_stat, p_value = ttest_rel(before, after)
+
+print("T-statistic:", t_stat)
+print("p-value:", p_value)
+
+if p_value < 0.05:
+    print("Conclusion: Significant improvement after intervention.")
+else:
+    print("Conclusion: No significant improvement after intervention.")
