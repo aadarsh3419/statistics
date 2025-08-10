@@ -1,0 +1,16 @@
+import numpy as np
+from statsmodels.stats.weightstats import ztest
+
+# Sample data
+sample_data = [2.3, 2.5, 2.7, 2.8, 2.6, 2.4, 2.9, 2.5, 2.6, 2.7]
+
+# Perform one-sample z-test (test mean = 2.5)
+z_stat, p_value = ztest(sample_data, value=2.5)
+
+print("Z-statistic:", z_stat)
+print("p-value:", p_value)
+
+if p_value < 0.05:
+    print("Conclusion: Mean is significantly different from 2.5")
+else:
+    print("Conclusion: Mean is not significantly different from 2.5")
