@@ -1,0 +1,24 @@
+import pandas as pd
+from scipy.stats import chi2_contingency
+
+# Sample dataset
+data = pd.DataFrame({
+    "Gender": ["Male", "Male", "Female", "Female", "Male", "Female", "Male", "Female"],
+    "Preference": ["Tea", "Coffee", "Tea", "Tea", "Coffee", "Coffee", "Tea", "Coffee"]
+})
+
+# Create contingency table
+contingency_table = pd.crosstab(data["Gender"], data["Preference"])
+
+# Chi-square test
+chi2, p, dof, expected = chi2_contingency(contingency_table)
+
+print("Chi-square Statistic:", chi2)
+print("p-value:", p)
+print("Degrees of Freedom:", dof)
+print("Expected Table:\n", expected)
+
+if p < 0.05:
+    print("Conclusion: Significant relationship between Gender and Preference")
+else:
+    print("Conclusion: No significant relationship between Gender and Preference")
