@@ -1,0 +1,16 @@
+from scipy.stats import ttest_ind
+
+# Sample data: Scores of two groups
+group_A = [85, 88, 90, 93, 95]
+group_B = [78, 82, 84, 80, 79]
+
+# Perform two-sample t-test
+t_stat, p_value = ttest_ind(group_A, group_B)
+
+print("T-statistic:", t_stat)
+print("p-value:", p_value)
+
+if p_value < 0.05:
+    print("Conclusion: Significant difference between the two groups.")
+else:
+    print("Conclusion: No significant difference between the two groups.")
