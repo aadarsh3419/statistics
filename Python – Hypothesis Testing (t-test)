@@ -1,0 +1,15 @@
+import scipy.stats as stats
+
+# Sample data: before and after treatment sugar levels
+before = [150, 160, 155, 145, 170]
+after = [140, 150, 145, 138, 160]
+
+t_stat, p_value = stats.ttest_rel(before, after)
+
+print("t-statistic:", t_stat)
+print("p-value:", p_value)
+
+if p_value < 0.05:
+    print("Significant difference after treatment.")
+else:
+    print("No significant difference.")
