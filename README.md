@@ -53,11 +53,13 @@ This repo is part of my self-learning journey to become a **confident and job-re
 | ✔️ | Real-Life Projects using Statistics |
 | ✔️ | Interview Q&A (coming soon) |
 
-> 📌 **Note**: All topics will include formulas, explanation, Python code, and practical application wherever possible.
+
+
+📌 Note: All topics will include formulas, explanation, Python code, and practical application wherever possible.
 
 statistics-repo/
 │── README.md
-│── requirements.txt   # (optional, list of libraries: numpy, pandas, matplotlib, seaborn, scipy)
+│── requirements.txt        # (optional, list of libraries: numpy, pandas, matplotlib, seaborn, scipy)
 │
 ├── descriptive_stats/
 │   ├── mean_median_mode.py
