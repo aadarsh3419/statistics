@@ -1,0 +1,21 @@
+import scipy.stats as stats
+import math
+
+# Sample data
+X_bar = 105       # sample mean
+mu_0 = 100        # population mean
+sigma = 15        # population std
+n = 40            # sample size
+
+# Z-test statistic
+Z = (X_bar - mu_0) / (sigma / math.sqrt(n))
+p_value = 2 * (1 - stats.norm.cdf(abs(Z)))  # two-tailed
+
+print("Z-statistic:", Z)
+print("p-value:", p_value)
+
+# Decision at alpha=0.05
+if p_value < 0.05:
+    print("Reject H0")
+else:
+    print("Fail to reject H0")
